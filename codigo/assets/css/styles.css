@@ -1,0 +1,325 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 211, 211);
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.perfil {
+    text-align: center;
+}
+
+.perfil img {
+    width: 150px;
+    border-radius: 10%;
+    margin-bottom: 10px;    
+    margin-top: 10px;
+}
+
+.perfil p {
+    text-align: center;
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+
+.botoes-contato a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+#repos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#repos .repo {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Ajuste a largura conforme necessário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#repos .repo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #repos .repo {
+        width: calc(50% - 20px); /* Ajuste para duas colunas em telas menores */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #repos .repo {
+        width: 100%; /* Ajuste para uma coluna em telas muito pequenas */
+        margin: 10px 0;
+    }
+}
+
+.card {
+    color: black;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+.card a{
+    color: black;
+    text-decoration: none;
+}
+
+.colegas p {
+    text-align: center;
+}
+
+.colegas h3 {
+    text-align: center;
+}
+
+.colegas {    
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.colega {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.colega1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51vh;
+}
+
+.image-wrapper1 {
+    margin: 10px; 
+    text-align: center; 
+}
+
+.image-wrapper1 img {
+    max-width: 65%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+} 
+
+.image-wrapper {
+    margin: 10px; 
+    text-align: center; 
+}
+
+.image-wrapper img {
+    max-width: 50%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}  
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+h3{
+    text-align: center;
+}
+
+#container {
+    padding: 2px 16px;
+}
+
+#conteudos {
+    height: 400px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel__face {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+    color: white; 
+}
+
+.carousel__face:nth-child(1) {
+    background-image: url("https://doentesporfutebol.com.br/wp-content/uploads/2023/12/cruzeiro-tem-pronunciamento-de-ronaldo-sobre-cantos-homofobicos.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url("https://placar.com.br/wp-content/uploads/2021/10/cruzeiro-torcida.jpg");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url("https://s2-ge.glbimg.com/nHUfbBfRZWUv6Jbx2B_RAXkneZs=/0x0:1600x1067/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2019/11/18/torcida_do_cec.jpg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTKCI45vTBxtjJ2qgagQWf0E4x8_cKet8NtDwwH4CQd5MAC3fXdNjgq7oNGuVzVQn8jA&usqp=CAU");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+    background-image: url("https://s2.glbimg.com/OmXhCXt4PkyjdMLYvWuJuhYVg84=/620x470/smart/s.glbimg.com/es/ge/f/original/2017/09/28/cruzeiro_taca.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+    background-image: url("https://lncimg.lance.com.br/uploads/2023/10/Cruzeiro-Copa-do-Brasil-Sub-20-aspect-ratio-512-320.jpg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiAulUIM13WMBlF43Fi_Xck6hfOubpDrrXMUQi9CgUEg&s");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSJm7ZHTRF1eKOPX-GMRlvhFIECrryJN85eKH6sY9AZmbgJJkdTHAPzMGAYJTOoPNQ5A&usqp=CAU");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rjrNrY7wP6s6Uq24u4kw9oajmhqwt7CBwIIOb8-83aLdZ4PBWfFuGYAbl7aIfZswsDU&usqp=CAU");
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+/* Estilos para repositórios */
+
+.repo {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Ajuste a largura conforme necessário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repo h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.repo p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.repo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.repo a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.repo a:hover {
+    background-color: #555;
+}
+
+/* Estilos responsivos para celular */
+
+@media only screen and (max-width: 480px) {
+    .repo {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
